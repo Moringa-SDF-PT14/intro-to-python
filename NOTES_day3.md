@@ -45,3 +45,50 @@ Tools for Virtual Environments
 
 Module - Single python file that contains variables and functions
 Package - A directory / folder contains multiple modules, includes a special file : `__init__.py`
+
+## Regular Expressions (RegEx)
+
+- A sequence of characters that form a specific search pattern.
+
+*** All programming languages can interpret this sequence of characters
+
+### Why use RegEx?
+
+- Data Validation
+- Text Extraction
+- Search and Replace
+
+### Components
+
+RegEx are built from character literals (alphanumeric characters), and metacharacters (symbols that have a special meaning)
+
+1. Anchors - Specify where in the text to look
+
+Examples:-  
+    
+    a. `^` - check at the start of text
+    b. `$` - check at the end of the text
+
+2. Character Classes - Specify types of characters to search for
+
+Examples:-
+
+    a. `\d` - Match digits (0 - 9)
+    b. `\w` - Match words (letters, numbers, or underscores)
+    c. `\s` - Matches white spaces
+    d. `.` - Matches any character
+
+3. Quantifiers - Dictate number of characters
+
+Examples:-  
+
+    a. `+` - one or more
+    b. `*` - zero or more
+    c. `?` - zero or one
+    d. `{n}` - exactly n times
+
+
+### Examples
+
+1. Match / Confirm text provided is a 3 digit area code - `\d{3}$`
+2. Basic Email format - `\w+@\w+\.\w+$`
